@@ -1,0 +1,92 @@
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: "Work Sans", sans-serif;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Small */
+    @media (min-width: 768px) {
+        .container {
+        width: 750px;
+        }
+    }
+    /* Medium */
+    @media (min-width: 992px) {
+        .container {
+        width: 970px;
+        }
+    }
+    /* Large */
+    @media (min-width: 1200px) {
+        .container {
+        width: 1170px;
+        }
+    }
+    header{
+        padding: 20px;
+        background-color: #7aadb4;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .logo{
+        font-size: 24px;
+        color: #d3e4e6;
+        text-decoration: none;
+        font-weight: 900;
+        padding-left: 30px;
+        translate:0.5s ;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+    .navigtion a{
+        color: #d3e4e6;
+        text-decoration: none;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 600;
+
+
+    }
+    .landing{
+        background-image: url(../css/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+        background-size: cover;
+        position: relative;
+        height: calc(100vh - 67.59px);
+        
+    }
+    .landing .intro-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        width: 320px;
+        max-width: 100%;
+    } 
+    .landing .intro-text h1{
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        color: #e9f1f2;
+    }
+    .landing .intro-text p{
+        font-size: 12px;
+        font-weight: 500;
+        margin: 10px;
+        color: #d3e4e6;
+    }
